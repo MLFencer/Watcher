@@ -12,13 +12,13 @@ namespace Watcher.Data.SQL
     public class SqlUnitOfWork : ISqlUnitOfWork
     {
 
-        public SqlUnitOfWork(IBaseRepository<Person> personRepository, IBaseRepository<EventLog> eventsRepository, SqlDbContext context)
-        {
-            this.People = personRepository.WithContext(context);
-            this.Events = eventsRepository.WithContext(context);
+        //public SqlUnitOfWork(IBaseRepository<Person> personRepository, IBaseRepository<EventLog> eventsRepository, SqlDbContext context)
+        //{
+        //    //this.People = personRepository.WithContext(context);
+        //  //  this.Events = eventsRepository.WithContext(context);
 
 
-        }
+        //}
 
 
         public IBaseRepository<Person> People { get; }
